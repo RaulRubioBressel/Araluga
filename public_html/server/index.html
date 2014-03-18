@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script type="text/javascript" src="LIBS/jquery-2.0.3.min.js"></script>
+        <meta name="description" content="themeList" />
+        <meta charset='utf-8'/>
+        <title>Theme List</title>
+        <link href="../css/bootstrap.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+        <link href="../css/admin.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div id="wrapper">
+            <nav class="navbar navbar-inverse navbar-fixed-top fuente" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="nav-pills nav-stacked">
+                    <a class="navbar-brand titulo" href="#">Araluga</a>
+                </div>
+                <div class="nav-pills nav-stacked">
+                    <h3>Panel de administracion</h3>
+                </div>
+            </nav>
+        </div>
+        <section id="themeapp">
+            <header id="header">
+
+                <form method="post" id="formulario">
+                    <table class="contenedor" id="groups" border="1">
+                        <tr>
+                            <td><input type="text" placeholder="nombre" name="theme_name" size="12"></td>
+                            <td><input type="text" placeholder="descripcion" name="theme_description" size="70"></td>
+                            <td><input type="text" placeholder="coordenadaX" id="theme_coorX" name="theme_coorX" size="15"></td>
+                            <td><input type="text" placeholder="coordenadaY"  id="theme_coorY" name="theme_coorY" size="15"></td>
+                            <td><input type="text" placeholder="linea coordenadaX" id="vertex_coorX"name="vertex_coorX" size="18"></td>
+                            <td><input type="text" placeholder="linea coordenadaY" id="vertex_coorY" name="vertex_coorY" size="18"></td>
+                            <td><input type="submit" placeholder="Añadir" name="enviar" id="enviar" size="10"></td>
+                        </tr>
+                    </table>
+            </header>
+            <div id="groups">
+            </div>
+        </section>
+        <script type="text/javascript" src="../js/js_map/admin.js"></script>
+    </body>
+</html>

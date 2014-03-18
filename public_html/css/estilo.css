@@ -1,0 +1,1454 @@
+	
+	@font-face{
+	font-family: 'titulo';
+	src: url('../fonts/Kara.ttf') format('truetype');
+	}
+	@font-face{
+	font-family: 'subtitulo';
+	src: url('../fonts/arabtype.ttf')  format('truetype');
+	}
+	
+	@font-face{
+	font-family: 'normal';
+	src: url('../fonts/Yellow.ttf')  format('truetype');
+	 }
+	
+		@-webkit-keyframes menu {
+			0% {
+				-webkit-transform:  translateY(70px)
+			}
+			
+			100% {
+				-webkit-transform:  translateY(0px)
+			}
+		}
+		@-moz-keyframes menu {
+			0% {
+				-moz-transform:  translateY(70px)
+			}
+		
+			100% {
+				-moz-transform:  translateY(0px)
+			}
+		}
+		@-o-keyframes menu {
+			0% {
+				-o-transform:  translateY(70px)
+			}
+		
+			100% {
+				-o-transform:  translateY(0px)
+			}
+		}
+		@keyframes menu {
+			0% {
+				transform:  translateY(70px)
+			}
+			
+			100% {
+				transform:  translateY(0px)
+			}
+		}
+		
+		
+		
+		
+		@-webkit-keyframes menu2 {
+			0% {
+				-webkit-transform:  translateY(-170px)
+			}
+			
+			100% {
+				-webkit-transform:  translateY(0px)
+			}
+		}
+		@-moz-keyframes menu2 {
+			0% {
+				-moz-transform:  translateY(-170px)
+			}
+		
+			100% {
+				-moz-transform:  translateY(0px)
+			}
+		}
+		@-o-keyframes menu2 {
+			0% {
+				-o-transform:  translateY(-170px)
+			}
+		
+			100% {
+				-o-transform:  translateY(0px)
+			}
+		}
+		@keyframes menu2 {
+			0% {
+				transform:  translateY(-170px)
+			}
+			
+			100% {
+				transform:  translateY(0px)
+			}
+		}
+		
+	@keyframes moveDown{
+		0% { 
+			transform: translateY(-40px); 
+			opacity: 0;
+		}
+		100% { 
+			transform: translateY(0px);  
+			opacity: 1;
+		}
+	}
+	/* ////////////////////////////////////////////////////// */
+	/* Add Animation to Selector */
+	/* ////////////////////////////////////////////////////// */
+	
+	
+	*{
+		margin:0 auto;
+		padding: 0;
+		z-index:0;
+		font-family:normal;
+		position:relative;
+		font-size:14px;
+		color:white;		
+	}
+
+	body{	
+		min-width:100%;
+		min-height:100%;
+		overflow:hidden;
+		background:#A39987;
+		background-image: url("../images/fondo8.png");
+	}
+ 
+    h1{
+		font-family:titulo;
+		font-size:46px;
+		-webkit-flex: 3 1 70%;
+		flex: 3 1 70%;
+		-webkit-order: 1;
+	    order: 1;
+	    color:#E0E6A3;   
+    }
+    a{
+		text-decoration:none;
+    }
+
+    #menu td{
+    	width:25%;
+
+    }
+    .menuexit{
+    	width:1%;
+    	
+    }
+	#menu {
+		position:absolute;
+		z-index:3;
+		top: 30px;
+		min-width:80%;
+		color:white;
+		position: fixed;
+		background: #ccccff;
+		background-color: rgba(105,105,105,0.3);
+
+		display: -webkit-flex;
+		display:         flex;
+		-webkit-flex-flow: row;
+		flex-flow: row;
+				 
+		transition:All 1s ease;
+		-webkit-transition:All 1s ease;
+		-moz-transition:All 1s ease;
+		-o-transition:All 1s ease;
+
+		-webkit-box-shadow: 0px 5px 11px rgba(50, 50, 50, 0.25);
+		-moz-box-shadow:    0px 5px 11px rgba(50, 50, 50, 0.25);
+		box-shadow:         0px 5px 11px rgba(50, 50, 50, 0.25);
+
+		-webkit-animation-name: menu;
+		-moz-animation-name: menu;
+		-o-animation-name: menu;
+		animation-name: menu;
+		-webkit-animation-duration: 1s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-timing-function: ease;
+		-webkit-animation-fill-mode: both;
+		-moz-animation-duration: 1s;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-timing-function: ease;
+		-moz-animation-fill-mode: both;
+		-o-animation-duration: 1s;
+		-o-animation-iteration-count: 1;
+		-o-animation-timing-function: ease;
+		-o-animation-fill-mode: both;
+		animation-duration: 1s;
+		animation-iteration-count: 1;
+		animation-timing-function: ease;
+		animation-fill-mode: both;		   
+
+   }   
+    #menu:hover{
+		background-color: rgba(65,65,65,1);
+	}
+	#zonamenu{
+		width:55%;
+		display:inline-block;
+	}
+	#zonamenu h1{
+		font-family:titulo;
+		text-transform:capitalize;
+	}
+	#zonamenu table{
+		width: 100%;
+		height: 78px;
+	}
+	#zonamenu nav{
+		display:inline-block;	
+		transition:0.5s;
+		text-transform:uppercase; 
+		text-align:left;
+		padding:1% 4%;		
+		vertical-align:middle;
+		transition:0.5s;
+		-webkit-transition:0.5s;
+		-moz-transition:0.5s;
+	}
+	#zonamenu nav a{
+		display:block;
+		-webkit-transition:1s;
+		-moz-transition:1s;
+		transition:1s;
+	}
+	.estoy{
+		border-top: 1px solid #E0E6A3;
+		color:#E0E6A3;
+	}
+	#zonamenu nav a:hover {
+		color:#E0E6A3;
+	}
+
+	#menu2 {
+		position:absolute;
+		z-index:3;
+		padding:7px 0 ;
+		top: -58px;
+		min-width:100%;
+		color:white;
+		position: fixed;
+		background: #ccccff;
+		background-color: rgba(105,105,105,0.5);
+		display: -webkit-flex;
+		display:         flex;
+		-webkit-flex-flow: row;
+		flex-flow: row;   
+		transition:All 0.6s ease;
+		-webkit-transition:All 0.6s ease;
+		-moz-transition:All  0.6s ease;
+		-o-transition:All  0.6s ease;
+		-webkit-box-shadow: 0px 5px 11px rgba(50, 50, 50, 0.25);
+		-moz-box-shadow:    0px 5px 11px rgba(50, 50, 50, 0.25);
+		box-shadow:         0px 5px 11px rgba(50, 50, 50, 0.25);
+		-webkit-animation-name: menu2;
+		-moz-animation-name: menu2;
+		-o-animation-name: menu2;
+		animation-name: menu2;
+		-webkit-animation-duration: 1s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-timing-function: ease;
+		-webkit-animation-fill-mode: both;
+		-moz-animation-duration: 1s;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-timing-function: ease;
+		-moz-animation-fill-mode: both;
+		-o-animation-duration: 1s;
+		-o-animation-iteration-count: 1;
+		-o-animation-timing-function: ease;
+		-o-animation-fill-mode: both;
+		animation-duration: 1s;
+		animation-iteration-count: 1;
+		animation-timing-function: ease;
+		animation-fill-mode: both;		   
+	}   
+    #menu2:hover{
+		background-color: rgba(65,65,65,0.9);
+	}
+	#zonamenu2{
+		width:65%;
+		display:block;
+	}
+	#zonamenu2 nav{
+		cursor:pointer;
+		display:inline-block;	
+		transition:0.5s;	
+		text-transform: capitalize;
+		padding:1%;		
+		vertical-align:middle;
+		transition:0.5s;
+		-webkit-transition:0.5s;
+		-moz-transition:0.5s;
+	}
+	#zonamenu2 nav a{
+		font-size:14px;	
+		display:block;
+		transition:0.5s;
+		-webkit-transition:0.5s;
+		-moz-transition:0.5s;
+	}
+	#zonamenu2 nav a:hover {
+		color:#E0E6A3;
+	}
+	#video{
+		position: relative;
+	}
+	#videoObjerto{
+		z-index:0;	
+	}	
+	#content{
+		position:absolute;	
+		z-index:100;
+		top:22%;
+		right:20%;
+		width:278px;
+		transition:0.6s;
+		-webkit-transition:0.6s;
+		-moz-transition:0.6s;
+	}
+	#registro{
+		display: none;
+		position:absolute;	
+		z-index:100;
+		top:22%;
+		right:-505%;
+		width:328px;
+		transition:1s;	
+		-webkit-transition:1s;
+		-moz-transition:1s;
+	}
+	#registro form{
+		background-color: rgba(75,75,75,0.3);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		padding:7% 7% 25% 7%;
+	}
+	#registro input{
+		margin:5% 0;
+		padding:5px;
+		color:#414141;
+	}
+	#intro{}
+	#intro hr{
+		width:100%;
+		color:#E0E6A3;
+		margin:3% 0 6% 0;
+	}
+	#intro h1{	
+		font-family: 'normal';
+		font-size:30px;
+		letter-spacing:15px;
+	}
+	#intro p{
+		margin:3% 0 6% 0;
+		text-align:justify;
+	}
+	
+	#form{
+		background-color: rgba(75,75,75,0.3);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		padding:7% 7% 25% 7%;
+	}
+	#form input{
+		color:#414141;
+		padding:5px;	
+		margin:5% 0;
+    }
+	.usuario , .contrasena, .email{
+		width:94%;
+		font-size:18px;
+	}
+	#reg, #log{
+		color:#E0E6A3;
+		font-size:16px;
+		padding-top:15px;
+		float:left;
+	}
+	#submit{
+		font-size:16px; 
+		border:0;
+		color:#8C510A;
+		float:right;/* CHAPUZA CHAPUZA CHAPUZA CHAPUZA CHAPUZA CHAPUZA CHAPUZA se sale del form y por eso tengo q darle mas tamaño al padding de form y float a #registrarse */	
+		background: #e0e6a3; /* Old browsers */
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-transition:0.5s;
+		-moz-transition:0.5s;
+		transition:0.5s;
+	}
+	#submit:hover{
+		background: #414141; /* Old browsers */
+		color:#e0e6a3;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	#video footer{
+		z-index:100;
+		width:100%;
+		height:10%;
+		background-color: rgba(65,65,65,0.6);
+		position:absolute;
+		bottom:0px;
+	}
+	#step2{
+		background-image: url("../images/fondo2.png");
+		background-size: 100% 100% ;
+		padding:7% 5%;
+		width:90%;
+		z-index:2;
+		height:800px;
+	}
+	#instrucciones{
+		padding:7% 5%;
+		width:60%;
+		height:100%;
+		padding-top:80px;
+	}
+/****************************************************************** impress   impress***************************/
+	#impress{
+
+	width: 100%;
+	margin-left:0;
+	}	
+	.jms-slideshow {
+		position: relative;
+		width: 100%;
+		border:10px solid #414141;
+		float:left;
+		-webkit-border-radius: 15px;
+	-moz-border-radius:15px;
+	border-radius: 15px;
+
+	}
+	.jms-wrapper {
+
+		height: 360px;
+		
+		-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+		-webkit-transition: background-color 1s linear;
+		-moz-transition: background-color 1s linear;
+		-o-transition: background-color 1s linear;
+		-ms-transition: background-color 1s linear;
+		transition: background-color 1s linear;
+	}
+
+	.color-1{
+		background-color: rgba(224,230,163,0.91);
+
+
+
+		
+
+	}
+	.color-2 {
+			background-color: rgba(224,230,163,0.91);
+
+	}
+	.color-3 {
+
+	}
+	.color-4 {
+		background-color: rgba(224,230,163,0.91);
+	}
+	.color-5 {
+			background-color: rgba(224,230,163,0.91);
+	}
+	.color-6{
+			background-color: rgba(224,230,163,0.91);
+	}
+	.color-7{
+			background-color: rgba(224,230,163,0.91);
+
+	}
+
+	.step {	/* DENTRO DE LA VIÑETA*/
+
+		width: 900px;
+		height: 320px;
+		display: block;
+		-webkit-transition: opacity 1s;
+		-moz-transition: opacity 1s;
+		-ms-transition: opacity 1s;
+		-o-transition: opacity 1s;
+		transition: opacity 1s;
+		
+		
+	}
+	.step:not(.active) {
+		opacity: 0;
+		filter: alpha(opacity=0); /* internet explorer */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	}
+	.jms-content{
+		margin: 50px 370px 0px 50px;  /*Para que no se pise letra e imagenes*/
+		position: relative;
+		clear: both;
+	}
+	.step h3{
+			color:#AD8952;
+		font-size: 42px;
+		font-weight: bold;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+		
+		margin: 0;
+	}
+	.step h4{
+		color: #8C510A;
+		font-size: 30px;
+		
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+		
+		margin: 0;
+		
+	}
+
+	.step h5{
+		color: #8C510A;
+		font-size: 48px;
+		
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+		
+		margin: 0;
+	}
+	.step p {
+		color: #8C510A;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+		font-size: 28px;
+		font-weight: normal;
+		position: relative;
+		margin: 0;
+	}
+	a.jms-link{
+		
+		color: #8C510A;
+		text-transform: uppercase;
+		background: #969696; /* Old browsers */
+		background: -moz-linear-gradient(top, #969696 0%, #727272 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#969696), color-stop(100%,#727272)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #969696 0%,#727272 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #969696 0%,#727272 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #969696 0%,#727272 100%); /* IE10+ */
+		background: linear-gradient(top, #969696 0%,#727272 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#969696', endColorstr='#727272',GradientType=0 ); /* IE6-9 */
+		padding: 8px 15px;
+		display: inline-block;
+		
+		font-weight: bold;
+		color: #E0E6A3;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+		border: 1px solid #444;
+		border-radius: 4px;
+		opacity: 1;
+		margin-top: 20px;
+		clear: both;
+		-webkit-transition: all 0.4s ease-in-out 1s;
+		-moz-transition: all 0.4s ease-in-out 1s;
+		-ms-transition: all 0.4s ease-in-out 1s;
+		-o-transition: all 0.4s ease-in-out 1s;
+		transition: all 0.4s ease-in-out 1s;
+	}
+	.step:not(.active) a.jms-link{
+		opacity: 0;
+
+	}
+	.step img{
+		position: absolute;
+		right: 0px;
+		top: 0%;
+	}
+	.jms-dots{
+		width: 100%;
+		position: absolute;
+		text-align: center;
+		left: 0px;
+		bottom: 20px;
+		z-index: 2000;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
+
+
+	.jms-arrows{
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
+	.jms-arrows span{
+		position: absolute;
+		top: 50%;
+		margin-top: -40px;
+		height: 80px;
+		width: 30px;
+		cursor: pointer;
+		z-index: 2000;
+		
+		border-radius: 3px;
+	}
+	.jms-arrows span.jms-arrows-prev{
+		background: #414141 url(../images/arrow_left.png) no-repeat 50% 50%;
+		left: -39px;
+		top:-170px;
+	}
+	.jms-arrows span.jms-arrows-next{
+		background: #414141 url(../images/arrow_right.png) no-repeat 50% 50%;
+		right: -39px;
+		top:-170px;
+	}
+	/* Not supported style */
+	.jms-wrapper.not-supported{
+		background-color: #E3D8FF;
+
+	}
+	.jms-wrapper.not-supported:after{
+		content: 'The slideshow functionality is not supported on your device.';
+		padding: 0px 0px 30px 0px;
+		text-align: center;
+		display: block;
+	}
+	.jms-wrapper.not-supported .step{
+		display: none;
+		position: relative;
+		opacity: 1;
+		filter: alpha(opacity=99); /* internet explorer */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+		margin: 20px auto;
+	}
+	.jms-wrapper.not-supported .step:first-of-type{
+		display: block;
+	}
+	.jms-wrapper.not-supported .step:not(.active) a.jms-link{
+		opacity: 1;
+		margin-top: 40px;
+	}	
+
+		
+	/****************************************************************** VIDAS DINERO LLAVES  ***************************/
+	#contenedorvdl{
+	margin-top:5%;
+
+
+	width:107%;
+	height:35%;
+	float:left;
+		-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	}
+
+	#vdl{
+	float:left;
+	text-align:center;
+	width:22%;
+	height:200px;
+	padding: 3%;
+	margin:15px;
+			background-color: rgba(65,65,65,0.91);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	#vdl img{
+	text-align:center;
+	height:60px;
+	margin-bottom:10px;
+	}
+	#vdl h3{
+	padding:2%;
+	text-transform:uppercase;
+	letter-spacing:8px;
+	color:#E0E6A3;
+	}
+
+	#vdl p{
+	text-align:justify;
+	padding:3%;
+	font-size:13px;
+
+	}
+	/******************************************************************FIN VIDAS DINERO LLAVES***************************/		  
+
+	 
+	  /* Too narrow to support three columns */
+	  @media all and (max-width: 640px) {
+	  
+	   #main, #page {
+		-webkit-flex-flow: column;
+				flex-flow: column;
+	   }
+
+	   #main > article, #main > nav, #main > aside {
+		/* Return them to document order */
+		-webkit-order: 0;
+				order: 0;
+	   }
+	  
+	   #main > nav, #main > aside, header, footer {
+		min-height: 170px;
+		max-height: 170px;
+	   }
+	  }
+	  
+	  
+	  
+	  /***************************************************EMPEZAR*************************************************/
+	  #empezar{
+	  background-image: url("../images/fondo4.png");
+	background-size: 100% 100% ;
+	height:800px;
+	padding-top:210px;
+
+	}
+	#pizarra{
+	position:relative;
+	width:62%;
+	top:13%;
+	
+	height:50%;
+	background-color: rgba(13,186,255,0.9);
+	border:10px solid #414141;
+	-webkit-border-radius: 15px;
+	-moz-border-radius:15px;
+	border-radius: 15px;
+	color:#414141;
+	overflow:hidden;
+	tansition:1s;
+	-webkit-tansition:1s;
+	-moz-tansition:1s;
+	}
+
+	.canvasMap{
+		position:absolute;
+		width:2000px;
+		height:1500px;
+	}
+
+	#map area{display:none}
+	#map .visible{display:block;}
+
+	#punto{
+		width: 1%;
+		z-index: 100;
+	}
+	 /***************************************************CUADERNO*************************************************/
+	
+	 .selected img{
+	 	width: 100%;
+	 }
+	#primera{
+		width: 20%;
+		margin-top: 20%;
+		transform : rotate(6deg);
+		-moz-transform : rotate(6deg); /* Firefox */
+		-webkit-transform : rotate(6deg); /* Chrome - Safari */
+		-o-transform : rotate(6deg); /* Opera */
+
+	}
+
+	#final{
+		width: 20%;
+		margin-top: 20%;
+		transform : rotate(9deg);
+		-moz-transform : rotate(9deg); /* Firefox */
+		-webkit-transform : rotate(9deg); /* Chrome - Safari */
+		-o-transform : rotate(9deg); /* Opera */
+	}
+	#medio{
+		width: 20%;
+		margin-top: 30%;
+		transform : rotate(-6deg);
+		-moz-transform : rotate(-6deg); /* Firefox */
+		-webkit-transform : rotate(-6deg); /* Chrome - Safari */
+		-o-transform : rotate(-6deg); /* Opera */
+	}#primera:hover{
+		cursor: pointer;
+		transform : rotate(-6deg);
+		-moz-transform : rotate(-6deg); /* Firefox */
+		-webkit-transform : rotate(-6deg); /* Chrome - Safari */
+		-o-transform : rotate(-6deg); /* Opera */
+		background-color: rgba(204,229,255,0.61);
+	}
+
+	#final:hover{
+		cursor: pointer;
+		transform : rotate(-9deg);
+		-moz-transform : rotate(-9deg); /* Firefox */
+		-webkit-transform : rotate(-9deg); /* Chrome - Safari */
+		-o-transform : rotate(-9deg); /* Opera */
+		background-color: rgba(204,229,255,0.61);
+	}
+	.colorImg{
+		filter: grayscale(0%);
+
+		-webkit-filter: grayscale(0%);
+
+		-moz-filter: grayscale(0%);
+
+		-o-filter: grayscale(0%);
+
+		-ms-filter: grayscale(0%);
+	}
+	#medio:hover{
+		cursor: pointer;
+		transform : rotate(6deg);
+		-moz-transform : rotate(6deg); /* Firefox */
+		-webkit-transform : rotate(6deg); /* Chrome - Safari */
+		-o-transform : rotate(6deg); /* Opera */
+		background-color: rgba(204,229,255,0.61);
+	}
+	#primera:hover img{
+		filter: grayscale(0%);
+
+		-webkit-filter: grayscale(0%);
+
+		-moz-filter: grayscale(0%);
+
+		-o-filter: grayscale(0%);
+
+		-ms-filter: grayscale(0%);
+		transition:0.4s;
+		-webkit-transition:0.4s;
+	}
+
+	#final:hover img{
+		filter: grayscale(0%);
+
+		-webkit-filter: grayscale(0%);
+
+		-moz-filter: grayscale(0%);
+
+		-o-filter: grayscale(0%);
+
+		-ms-filter: grayscale(0%);
+		transition:0.4s;
+		-webkit-transition:0.4s;
+	}
+	#medio:hover img{
+		filter: grayscale(0%);
+
+		-webkit-filter: grayscale(0%);
+
+		-moz-filter: grayscale(0%);
+
+		-o-filter: grayscale(0%);
+
+		-ms-filter: grayscale(0%);
+		transition:0.4s;
+		-webkit-transition:0.4s;
+	}
+	 .polaroid{
+	 	float: left;
+	 	margin-left:7%;
+	 	width: 20%;	
+		background-color:white;
+		padding:2%;
+		padding-bottom:10%;
+		transition:0.4s;
+		-webkit-transition:0.4s;
+		-webkit-box-shadow: 0px 5px 11px rgba(50, 50, 50, 0.25);
+		-moz-box-shadow:    0px 5px 11px rgba(50, 50, 50, 0.25);
+		box-shadow:         0px 5px 11px rgba(50, 50, 50, 0.25);
+
+	 }
+	 .bordePolaroid{
+	 	background-color:white;
+		padding:2%;
+		padding-bottom:20%;
+		transition:0.4s;
+		-webkit-transition:0.4s;
+		-webkit-box-shadow: 0px 5px 11px rgba(50, 50, 50, 0.25);
+		-moz-box-shadow:    0px 5px 11px rgba(50, 50, 50, 0.25);
+		box-shadow:         0px 5px 11px rgba(50, 50, 50, 0.25);
+		transform : rotate(-6deg);
+		-moz-transform : rotate(-3deg); /* Firefox */
+		-webkit-transform : rotate(-3deg); /* Chrome - Safari */
+		-o-transform : rotate(-3deg); /* Opera */
+
+	 }
+	 .sinColorImg{
+	 	
+	 	
+ 		filter: grayscale(100%);
+
+		-webkit-filter: grayscale(100%);
+
+		-moz-filter: grayscale(100%);
+
+		-o-filter: grayscale(100%);
+
+		-ms-filter: grayscale(100%);
+		transition:0.4s;
+		-webkit-transition:0.4s;
+
+	 }
+
+	
+	#correctAnswer{
+		
+		font-size:26px; 
+		border:0;
+		color:#414141;
+		padding: 3%;
+		margin-top: 14%;
+		margin-right: 4%;
+		float:right;/* CHAPUZA CHAPUZA CHAPUZA CHAPUZA CHAPUZA CHAPUZA CHAPUZA se sale del form y por eso tengo q darle mas tamaño al padding de form y float a #registrarse */	
+		background: #e0e6a3; /* Old browsers */
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-transition:0.5s;
+		-moz-transition:0.5s;
+		transition:0.5s;
+	}
+	#failAnswer{
+		font-size:26px; 
+		border:0;
+		color:#414141;
+		padding: 3%;
+		margin-top: 8%;
+		margin-right: 4%;
+		float:right;/* CHAPUZA CHAPUZA CHAPUZA CHAPUZA CHAPUZA CHAPUZA CHAPUZA se sale del form y por eso tengo q darle mas tamaño al padding de form y float a #registrarse */	
+		
+	}
+	#nextLevel{
+		cursor:pointer; 
+		margin-top: 6%;
+		right:10%;
+		font-size:26px; 
+		border:0;
+		color:#414141;
+		padding: 3%;
+		
+		margin-right: 4%;
+		float:right;/* CHAPUZA CHAPUZA CHAPUZA CHAPUZA CHAPUZA CHAPUZA CHAPUZA se sale del form y por eso tengo q darle mas tamaño al padding de form y float a #registrarse */	
+		background: #e0e6a3; /* Old browsers */
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-transition:0.5s;
+		-moz-transition:0.5s;
+		transition:0.5s;
+	}
+	#nextLevel:hover{
+		background: #414141; /* Old browsers */
+		color:#e0e6a3;
+		
+	}
+	#resume{
+		margin-top: 7%;
+		width: 50%;
+		background-color: rgba(75,75,75,0.3);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		padding:7%;
+	}
+	#resume p{
+
+		font-size:20px;
+		color:#E0E6A3;   
+	} 
+	#resume h1{
+		font-family: 'normal';
+		font-size:30px;
+		letter-spacing:15px;
+	}
+	 .redtext{
+
+
+	 }
+	.clear { clear: both; display: block; }
+	.f_right { float: right; }
+	.f_left { float: left; }
+	.hidden { display: none; }
+
+	/* i wanted to be exact */
+	
+	#main p{
+		height: 44px;
+		padding: 3%;
+	}
+	#main{
+		width: 100%;
+		padding: 20px;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+
+	#complete{
+		border: 2px ridge #78b7d5;
+		width: 100%;
+		
+		padding: 0px;
+		font-size: 3em;
+		background-color: #ffffff;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+
+	#left_side{
+		padding-top: 8%;
+		width: 15%;	
+		border: 0px solid #00ff00;
+		text-align: center !important;
+		float: left;
+		margin: 0px auto 0px auto !important;
+	}
+
+	#middle_side{
+		padding-top: 8%;
+		width: 15%;
+		border: 0px solid #0000ff;
+		text-align: center !important;
+		float: left;
+		margin: 0px auto 0px auto !important;
+	}
+
+	#right_side	{
+		padding-top: 8%;
+		width: 68%;
+		border: 0px solid #0000ff;
+		text-align: left;
+		float: right;
+		margin: 0px auto 0px auto;
+	}
+
+	.object	{
+
+		background-color: #414141;
+		color: #e0e6a3; 
+		cursor: pointer;
+		text-align: center;
+		font-size: 14em;
+		padding: 0px;
+		margin: 10px auto 0px auto;
+		border-radius: 100%;
+		height: 50px;
+		width: 50px;
+		border: 1px solid #000000;
+	}
+
+	.numberPad { 
+		padding-top: 8px;
+		font-size: 0.13em;
+	}
+
+	.objectLanded{
+		height: 50px;
+		width: 50px;
+		border: 2px dashed #1E90FF;
+		color:red;
+	}
+
+	.completeObject{
+		border: 1px solid #000000;
+		background-color: rgba(204,229,255,0.61);
+		color: #414141;
+		cursor: pointer;
+		text-align: center;
+		font-size: 2em;
+		padding: 0px;
+		margin: 10px auto 0px auto;
+		border-radius: 100%;
+		height: 50px;
+		width: 50px;
+	}
+
+	#target1, #target2, #target3, #target4	{
+		color: #414141;
+		cursor: pointer;
+		text-align: center;
+		border: 4px solid #000000;
+		font-size: 2em;
+		padding: 0px;
+		margin: 10px auto 0px auto;
+		border-radius: 100%;
+		height: 44px;
+		width: 44px;
+	}
+
+	#feedback	{
+		border: 0px solid #ff0000;
+		float: left;
+		text-align: center;
+		padding: 10px 0px 0px 25%;
+		/*
+		background-color: #78b7d5;
+		*/
+		color: #000000;
+		font-size: 1.4em;
+		width: 50%;
+	}
+
+
+	  /***************************************************FIN CUADERNO*************************************************/
+	  #profile{
+	  	
+	  	height: 100%;
+	  	width: 100%;
+ 	background-image: url("../images/perfil/default.jpg");
+	background-size: 100% 100% ;
+
+
+	  }
+
+	   #descprofile hr{
+	   	width: 100%;
+	   	margin: 12% 2% ;
+	   }
+	  #titleprofile{
+
+	  	position: relative;
+	  	font-family: titulo;
+	  	font-size: 60px;
+	  	color:#E0E6A3; 
+	  	opacity: 0.6;
+	  	z-index: 1;
+	  	padding: 0 2%;
+	  	top:-40%;
+	  	text-shadow: 7px 1px 30px rgba(175, 175, 175, 1);
+
+
+	  }
+
+	  .cursor{
+	  	cursor: pointer;
+	  }
+	  #imgProfile{
+	  	display: none;
+		width: 60%;
+		background-color: rgba(75,75,75,0.3);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		padding:3%;
+		position: relative;
+		top:-102%;
+		margin-left: 7%;
+
+	  }
+	  #imgProfile img{
+	  	width: 50%;
+
+	  	margin: 5%;
+	  }
+	  .hoverPerfil{
+	  	cursor: pointer;
+	  	position: relative;
+		top: -104%;
+		left: 39%;
+	  	z-index: 1000;
+	  	display: none;
+	  }
+	  .fotoPerfil{
+	  	transition:0.6;
+	  	-webkit-transition:0.6;
+	  }
+
+	  .fotoPerfil:hover{
+	  	cursor: pointer;
+	  	filter: grayscale(90%);
+
+		-webkit-filter: grayscale(90%);
+
+		-moz-filter: grayscale(90%);
+
+		-o-filter: grayscale(90%);
+
+		-ms-filter: grayscale(90%);
+		position: relative;
+		z-index: 0;
+	  }
+	  .fotoPerfilhover{
+	  	cursor: pointer;
+	  	filter: grayscale(90%);
+
+		-webkit-filter: grayscale(90%);
+
+		-moz-filter: grayscale(90%);
+
+		-o-filter: grayscale(90%);
+
+		-ms-filter: grayscale(90%);
+		position: relative;
+		z-index: 0;
+	  }
+	  #titlechapter{
+
+	  	font-family: titulo;
+	  	font-size: 130px;
+	  	color:#414141; 
+	  	top:25%;
+	  	left:10%;
+	  	margin-bottom: 17%;
+		}
+
+		#subtitle{
+		
+	  	font-family: titulo;
+	  	font-size: 60px;
+	  	color:white; 
+	  	
+
+		}
+		.sub{
+			margin:55% 30%;
+
+		}
+
+
+	  #descprofile{
+	  	height: 100%;
+ 		position: relative;
+ 	  
+	  	margin-right: 0%;
+	  	width: 10%;
+	  	padding: 4%;
+	  	padding-right: 6%;
+	  	
+		background-color: rgba(75,75,75,0.6);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		z-index: 2;
+	  }
+	  .datos{
+	  	font-size: 30px;
+	  	color:#E0E6A3; 
+	  	text-shadow: 7px 1px 10px rgba(75, 75, 75, 1);
+	  }
+	  /***************************************************CHAT*************************************************/
+	  #saladereuniones{
+	  background-image: url("../images/fondo6.png");
+	background-size: 100% 100% ;
+	height:800px;
+	padding-top:170px;
+	}
+	  /***************************************************CCONTACTO*************************************************/
+	  #contacto{
+	  background-image: url("../images/fondo8.png");
+	background-size: 100% 100% ;
+	height:800px;
+	padding-top:170px;
+	}
+	  /****************************************************************** PASES***************************/		
+	  
+	  #pase1{
+	  height:800px;
+	  background-image: url("../images/fondo1.png");
+	background-size: 100% 100% ;
+	  
+	  } 
+		#pase2{
+	  height:800px;
+	  background-image: url("../images/fondo3.png");
+	background-size: 100% 100% ;
+	  
+	  } 
+	#pase3{
+	  height:800px;
+	  background-image: url("../images/fondo5.png");
+	background-size: 100% 100% ;
+	  
+	  } 
+	#pase4{
+	  height:800px;
+	  background-image: url("../images/fondo7.png");
+	background-size: 100% 100% ;
+	  
+	  } 
+	  
+	  /******************************************************************FIN DE PASES***************************/		 
+	  
+	  
+	  
+	   /* Smartphones Baja Gama(portrait & landscape) */
+	   
+	   
+	@media only screen 
+	and (min-device-width : 320px) 
+	and (max-device-width : 480px) {
+
+	}
+
+	/* Smartphones (landscape) */
+	@media only screen 
+	and (min-width : 321px) {
+
+	}
+
+	/* Smartphones (portrait) */
+	@media only screen 
+	and (max-width : 320px) {
+
+	}
+
+	/* iPads (portrait & landscape) */
+	@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) {
+
+	}
+
+	/* iPads (landscape) */
+	@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) 
+	and (orientation : landscape) {
+
+	}
+
+	/* iPads (portrait) */
+	@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) 
+	and (orientation : portrait) {
+
+	}
+
+	/* Ordenadores de sobremesa y portátiles */
+	@media only screen 
+	and (min-width : 1224px) {
+
+	}
+	/*  portátiles */
+	@media only screen 
+	and (max-height : 768px) {
+		#zonamenu nav{
+		
+		
+		padding:1% 2.5%;		
+		}
+		#step2{
+		height:768px;
+		}
+		#instrucciones{
+			
+			
+			padding-top:80px;
+			
+			
+			}
+		#impress{
+
+		width: 100%;
+		}
+		.jms-wrapper {
+
+			height: 260px;
+			}	
+		.jms-slideshow {
+			width: 100%;
+		}
+		.step {	/* DENTRO DE LA VIÑETA*/
+
+			height: 320px;
+			width: 900px;
+		}
+		#vdl{
+		width:24%;
+		margin:15px;
+		height:150px;
+		padding: 2%;
+
+		}
+		#vdl p{
+		font-size:12px;
+		}
+		#contenedorvdl{
+		margin-top:20px;
+		vertical-align:top;
+
+
+
+		}
+		#vdl img{
+		text-align:center;
+		height:50px;
+
+
+		}
+		#vdl h3{
+		padding:0;
+		}
+		#pizarra{
+		
+		overflow:hidden;
+		}
+
+
+		.jms-arrows span.jms-arrows-prev{
+			
+			top:-130px;
+		}
+		.jms-arrows span.jms-arrows-next{
+
+			top:-130px;
+		}
+	}
+/* Pantallas grandes */
+@media only screen 
+and (min-width : 1824px) {
+
+}
+
+/* iPhone 4, Xperia S y Alta Gama */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+
+	*{
+		font-size:26px;
+	}
+	#video{
+		display:none;
+	}
+	#impress{
+		display:none;
+	}
+	#zonamenu{
+		width:100%;
+	}
+	h1{
+		
+		font-size:86px;
+		  
+    }
+    #zonamenu table{
+		
+		height: 178px;
+	}
+
+	#zonamenu nav{
+		
+		padding:4% 11%;		
+		
+	}
+}
